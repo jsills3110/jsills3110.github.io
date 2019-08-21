@@ -1,2 +1,2 @@
-# jsills3110.github.io
-Personal Page
+# Basic-Portfolio
+A basic portfolio website for myself.
