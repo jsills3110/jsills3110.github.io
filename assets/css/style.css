@@ -226,7 +226,7 @@ footer {
   away from it a bit.*/
 #about-image {
   float: left;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 20px 10px 0px;
 }
 
 /*On the first part of the about paragraph, set the margin-top to push it down from the divider.*/
