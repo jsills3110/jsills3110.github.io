@@ -1,15 +1,33 @@
+/*Set similar background colors.*/
+body, h3, button, #title-div {
+  background-color: #4aaaa5;
+}
+
+/*Set similar font colors.*/
+body, a {
+  color: #777777;
+}
+
+/*Set similar background colors.*/
+header, main {
+  background-color: #ffffff;
+}
+
+/*Set similar background colors.*/
+button:hover, footer {
+  background-color: #666666;
+}
+
 /*For the body, zero out the margin and padding so the content spreads out to the full viewport.
   Set the background color, image, font family and color for all text in the body.*/
 body {
+  position: relative;
   margin: 0;
   padding: 0;
-  position: relative;
   min-height: 100vh;
   height: 100%;
-  background-color: #4aaaa5;
   background-image: url("../images/full-bloom.png");
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #777777;
 }
 
 /*For the header, set the position to fixed so it does not scroll with the content. Position it 
@@ -20,7 +38,6 @@ header {
   top: 0;
   width: 100%;
   height: 80px;
-  background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
   z-index: 2;
 }
@@ -31,7 +48,6 @@ main {
   margin: 125px auto 105px;
   width: 920px;
   padding: 20px;
-  background-color: #ffffff;
 }
 
 /*Set all heading fonts to the same font-family.*/
@@ -40,7 +56,7 @@ h1, h2, h3, h6 {
 }
 
 /*Set h1 and h3 to the same font color.*/
-h1, h3 {
+h1, h3, button {
   color: #ffffff;
 }
 
@@ -59,7 +75,6 @@ h3 {
   padding-top: 6%;
   font-size: medium;
   font-weight: lighter;
-  background-color: #4aaaa5;
   text-align: center;
 }
 
@@ -77,13 +92,11 @@ ul {
 
 /*Set the color and decoration of links.*/
 a {
-  color: #777777;
   text-decoration: none;
 }
 
 /*Set the color and text-decoration of links when they are hovered over.*/
 a:hover {
-  color: #666666;
   text-decoration: underline;
 }
 
@@ -125,8 +138,6 @@ textarea {
 color, font-family, border, and padding.*/
 button {
   margin-top: 10px;
-  background-color: #4aaaa5;
-  color: #ffffff;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   border: none;
   padding: 6px 22px;
@@ -134,7 +145,6 @@ button {
 
 /*Set the color, font weight, and padding of buttons when they are hovered over.*/
 button:hover {
-  background-color: #666666;
   font-weight: bold;
   padding: 6px 20px;
 }
@@ -148,7 +158,6 @@ footer {
   width: 100%;
   height: 50px;
   color: #cccccc;
-  background-color: #666666;
   text-align: center;
   border-top: 8px solid #4aaaa5;
 }
@@ -203,7 +212,6 @@ footer {
 #title-div {
   float: left;
   width: 250px;
-  background-color: #4aaaa5;
   text-align: center;
 }
 
