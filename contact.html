@@ -7,56 +7,53 @@
 </head>
 
 <body>
-    <!--Page container contains all the content on the page and is used as an ancestor to help 
-    position the footer.-->
-    <div id="page-container">
-        <!--The header is fixed and contains the title of the website and the menu.-->
-        <header>
-            <div id="header-container">
-                <!--The title of the website.-->
-                <div id="title-div">
-                    <h1>Jessica Sills</h1>
-                </div>
-                <!--The menu of the website.-->
-                <nav class="clearfix" id="menu">
-                    <ul>
-                        <li class="menu-item"><a href="index.html">About</a></li>
-                        <p class="menu-item-separator">|</p>
-                        <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-                        <p class="menu-item-separator">|</p>
-                        <li class="menu-item clearfix"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+    <!--The header is fixed and contains the title of the website and the menu.-->
+    <header>
+        <!--The header container is used to center the content of the header in a specific way.-->
+        <div id="header-container">
+            <!--The title of the website.-->
+            <div id="title-div">
+                <h1>Jessica Sills</h1>
             </div>
-        </header>
-        <!--The main content of the webpage.-->
-        <div id="main-content">
-            <div>
-                <h2>Contact</h2>
-                <hr>
-                <form>
-                    Name
-                    <br>
-                    <input type="text" name="name">
-                    <br><br>
-                    Email
-                    <br>
-                    <input type="email" name="email">
-                    <br><br>
-                    Message
-                    <br>
-                    <textarea name="message" rows="10"></textarea>
-                    <br>
-                    <button type="button">Submit</button>
-                </form>
-            </div>
+            <!--The menu of the website.-->
+            <nav class="clearfix" id="menu">
+                <ul>
+                    <li class="menu-item"><a href="index.html">About</a></li>
+                    <p class="menu-item-separator">|</p>
+                    <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                    <p class="menu-item-separator">|</p>
+                    <li class="menu-item clearfix"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <!--The footer sticks to the bottom of the page if the content above it is short, and stays below the content and offscreen
-            if the content is tall.-->
-        <footer>
-            <h6>Copyright&copy;</h6>
-        </footer>
-    </div>
+    </header>
+    <!--The main content of the webpage.-->
+    <main>
+        <article>
+            <h2>Contact</h2>
+            <hr>
+            <form>
+                Name
+                <br>
+                <input type="text" name="name">
+                <br><br>
+                Email
+                <br>
+                <input type="email" name="email">
+                <br><br>
+                Message
+                <br>
+                <textarea name="message" rows="10"></textarea>
+                <br>
+                <button type="button">Submit</button>
+            </form>
+        </article>
+    </main>
+    <!--The footer sticks to the bottom of the page if the content above it is short, and stays below the content and offscreen
+        if the content is tall.-->
+    <footer>
+        <h6>Copyright&copy;</h6>
+    </footer>
 </body>
 
 </html>
