@@ -47,7 +47,7 @@ header {
 main {
   margin: 125px auto 105px;
   width: 920px;
-  padding: 20px;
+  padding: 20px 20px 10px;
 }
 
 /*Set all heading fonts to the same font-family.*/
@@ -113,6 +113,7 @@ p {
 /*Set the top margin of the form so that it is pushed down from the divider above it.*/
 form {
   margin-top: 25px;
+  padding-bottom: 10px;
 }
 
 /*Set the margin of the text inputs and textarea on the form so that they are pushed down from 
