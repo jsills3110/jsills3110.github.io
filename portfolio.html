@@ -2,67 +2,136 @@
 <html>
 
 <head>
-    <title>Jessica Sills</title>
+    <!--Title of the website/webpage, shown in the tab.-->
+    <title>Jessica Sills Portfolio</title>
+
+    <!--Required meta tags.-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Custom CSS link-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!--The header is fixed and contains the title of the website and the menu.-->
-    <header>
-        <!--The header container is used to center the content of the header in a specific way.-->
-        <div id="header-container">
-            <!--The title of the website.-->
-            <a href="index.html">
-                <div id="title-div">
-                    <h1>Jessica Sills</h1>
+    <!--Begin the fixed header.-->
+    <header class="bg-white fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto p-0">
+                    <!--Navbar-->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <a class="navbar-brand" href="index.html">Jessica Sills</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link" href="index.html">About</a>
+                                <a class="nav-item nav-link active" href="portfolio.html">Portfolio <span
+                                        class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-            </a>
-            <!--The menu of the website.-->
-            <nav class="clearfix" id="menu">
-                <ul>
-                    <li class="menu-item"><a href="index.html">About</a></li>
-                    <p class="menu-item-separator">|</p>
-                    <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-                    <p class="menu-item-separator">|</p>
-                    <li class="menu-item clearfix"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            </div>
         </div>
     </header>
-    <!--The main content of the webpage.-->
-    <main>
-        <article>
-            <h2>Portfolio</h2>
-            <hr>
-            <section id="project-section" class="clearfix">
-                <div class="project-photo">
-                    <img src="assets/images/project1.jpg" alt="Hiking Buddy">
-                    <h3>Hiking Buddy</h3>
+
+    <!--Main content of the web page.-->
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-10 mx-auto bg-white p-4">
+                <div class="row">
+                    <div class="col">
+                        <h2>Portfolio</h2>
+                        <hr>
+                    </div>
                 </div>
-                <div class="project-photo">
-                    <img src="assets/images/project2.jpg" alt="Walker Tracker">
-                    <h3>Walker Tracker</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/project1.jpg" class="card-img-top" alt="Hiking Buddy">
+                            <div class="card-body">
+                                <h5 class="card-title">Hiking Buddy</h5>
+                                <p class="card-text">Never get lost!</p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/project2.jpg" class="card-img-top" alt="Walker Tracker">
+                            <div class="card-body">
+                                <h5 class="card-title">Walker Tracker</h5>
+                                <p class="card-text">Keep track of your steps.</p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-photo">
-                    <img src="assets/images/project3.jpg" alt="Plant Database">
-                    <h3>Plant Database</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/project3.jpg" class="card-img-top" alt="Plant Database">
+                            <div class="card-body">
+                                <h5 class="card-title">Plant Database</h5>
+                                <p class="card-text">Identify plants with ease.</p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/project4.jpg" class="card-img-top" alt="RPG Game">
+                            <div class="card-body">
+                                <h5 class="card-title">RPG Game</h5>
+                                <p class="card-text">Kill monsters and save the prince!</p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-photo">
-                    <img src="assets/images/project4.jpg" alt="RPG Game">
-                    <h3>RPG Game</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-xl-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/project5.jpg" class="card-img-top" alt="Puzzle Quest">
+                            <div class="card-body">
+                                <h5 class="card-title">Puzzle Quest</h5>
+                                <p class="card-text">Work together with your friends to solve puzzles.</p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-photo">
-                    <img src="assets/images/project5.jpg" alt="Puzzle Quest">
-                    <h3>Puzzle Quest</h3>
-                </div>
-            </section>
-        </article>
-    </main>
-    <!--The footer sticks to the bottom of the page if the content above it is short, and stays below the content and offscreen
-        if the content is tall.-->
-    <footer>
-        <h6>Copyright&copy;</h6>
+            </div>
+        </div>
+    </div>
+
+    <!--Sticky footer.-->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <span class="text-muted">Copyright&copy;</span>
+        </div>
     </footer>
+
+    <!--Required JavaScript for Bootstrap functionality.-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
