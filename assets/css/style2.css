@@ -11,8 +11,13 @@
     height: 75vh;
 }
 
-#about-jumbotron {
+#intro-jumbotron {
     padding-left: 6rem;
+}
+
+#intro-divider {
+    margin-right: 5rem;
+    opacity: 0.75;
 }
 
 #headshot-row {
