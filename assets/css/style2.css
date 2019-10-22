@@ -1,0 +1,48 @@
+.jumbo-background {
+    /* The image used */
+    background-image: url("../images/Dusk-2.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 75vh;
+}
+
+#about-jumbotron {
+    padding-left: 6rem;
+}
+
+#headshot-row {
+    margin-top: -16rem;
+}
+
+.bg-dark-slate-opaque {
+    background-color: rgba(50, 64, 75, 0.40);
+}
+
+.bg-darkgray {
+    background-color: rgba(157,173,188);
+}
+
+.bg-gainsboro {
+    background-color: rgba(219,223,222);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: 'IM Fell English SC', serif;
+}
+
+p {
+    font-family: 'Asul', sans-serif;
+}
