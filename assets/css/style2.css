@@ -2,7 +2,7 @@ body {
     font-family: 'IM Fell English SC', serif;
 }
 
-p {
+p, ul {
     font-family: 'Asul', sans-serif;
 }
 
@@ -33,6 +33,10 @@ p {
 
 .bg-gainsboro {
     background-color: rgba(219,223,222);
+}
+
+.bg-burlywood {
+    background-color: rgba(238,169,157);
 }
 
 /* Extra small devices (575px and below) */
