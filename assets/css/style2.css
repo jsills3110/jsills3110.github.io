@@ -1,3 +1,11 @@
+body {
+    font-family: 'IM Fell English SC', serif;
+}
+
+p {
+    font-family: 'Asul', sans-serif;
+}
+
 .jumbo-background {
     /* The image used */
     background-image: url("../images/Dusk-2.jpg");
@@ -11,17 +19,8 @@
     height: 75vh;
 }
 
-#intro-jumbotron {
-    padding-left: 6rem;
-}
-
 #intro-divider {
-    margin-right: 5rem;
     opacity: 0.75;
-}
-
-#headshot-row {
-    margin-top: -16rem;
 }
 
 .bg-dark-slate-opaque {
@@ -36,18 +35,81 @@
     background-color: rgba(219,223,222);
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
+/* Extra small devices (575px and below) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .nav-item {
+        font-size: 1rem;
+    }
 }
 
-.nav-item {
-    font-size: 1.1rem;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #headshot-row {
+        margin: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
 }
 
-body {
-    font-family: 'IM Fell English SC', serif;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #headshot-row {
+        margin-top: -10rem;
+    }
+
+    #intro-divider {
+        margin-right: 1rem;
+        max-width: 18rem;
+    }
 }
 
-p {
-    font-family: 'Asul', sans-serif;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+    
+    .nav-item {
+        font-size: 1rem;
+    }
+
+    #headshot-row {
+        margin-top: -16rem;
+    }
+
+    #intro-jumbotron {
+        padding-left: 6rem;
+    }
+
+    #intro-divider {
+        margin-right: 4rem;
+        max-width: 100%;
+    }
+
+    #lets-talk-button {
+        margin-right: 15rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    #lets-talk-button {
+        margin-right: 0;
+    }
+
+    #headshot-row {
+        margin-top: -14rem;
+    }
 }
