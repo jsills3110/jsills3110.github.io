@@ -34,16 +34,28 @@ p, ul {
     opacity: 0.75;
 }
 
+.font-darkgray {
+    color: rgba(78,92,102);
+}
+
+.icon-size {
+    font-size: 1.5rem;
+}
+
 .bg-dark-slate-opaque {
     background-color: rgba(50, 64, 75, 0.40);
 }
 
-.bg-darkgray {
+.bg-gray {
     background-color: rgba(157,173,188);
 }
 
 .bg-md-gray {
     background-color: rgb(163,172,187);
+}
+
+.bg-antique {
+    background-color: rgb(255, 239, 228);
 }
 
 .bg-khaki {
@@ -56,6 +68,10 @@ p, ul {
 
 .bg-burlywood {
     background-color: rgba(238,169,157);
+}
+
+.bg-darksalmon {
+    background-color: rgb(226,145,107);
 }
 
 /* Extra small devices (575px and below) */
