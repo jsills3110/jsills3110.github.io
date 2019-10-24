@@ -19,6 +19,17 @@ p, ul {
     height: 75vh;
 }
 
+.project-background {
+    /* The image used */
+    background-image: url("../images/sunset.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #intro-divider {
     opacity: 0.75;
 }
@@ -29,6 +40,14 @@ p, ul {
 
 .bg-darkgray {
     background-color: rgba(157,173,188);
+}
+
+.bg-md-gray {
+    background-color: rgb(163,172,187);
+}
+
+.bg-khaki {
+    background-color: rgb(255, 229, 200);
 }
 
 .bg-gainsboro {
