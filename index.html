@@ -1,31 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <!--Title of the website/webpage, shown in the tab.-->
-    <title>Jessica Sills Portfolio</title>
-
-    <!--Required meta tags.-->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Bootstrap link-->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--Custom CSS link-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2fd1e693d6.js" crossorigin="anonymous"></script>
+
+    <!-- Google font links -->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asul&display=swap" rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+
+    <title>Jessica Sills</title>
 </head>
 
 <body>
+
     <!--Fixed header.-->
-    <header class="bg-white fixed-top">
+    <header class="fixed-top bg-dark-slate-opaque">
         <div class="container">
             <div class="row">
-                <div class="col-10 mx-auto p-0">
+                <div class="col mx-auto p-0">
                     <!--Navbar-->
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                        <a class="navbar-brand" href="index.html">Jessica Sills</a>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="index.html">Jessica Sills | Software Engineer</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -35,8 +43,8 @@
                             <div class="navbar-nav">
                                 <a class="nav-item nav-link active" href="index.html">About <span
                                         class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                                <a class="nav-item nav-link" href="portfolio.html">Completed Quests</a>
+                                <a class="nav-item nav-link" href="contact.html">Special Training</a>
                             </div>
                         </div>
                     </nav>
@@ -45,57 +53,167 @@
         </div>
     </header>
 
-    <!--Main content of the webpage.-->
-    <div class="container main-content">
+    <!-- Parallax background header. -->
+    <div class="jumbotron jumbotron-fluid jumbo-background m-0 p-0"></div>
+
+    <!-- Introduction section. -->
+    <div class="container">
         <div class="row">
-            <div class="col-10 mx-auto bg-white p-4">
-                <div class="row">
-                    <div class="col">
-                        <h2>About Me</h2>
-                        <hr>
+            <div class="col-md-1"></div>
+            <div class="col-12 col-md-11 mt-n5">
+                <div class="jumbotron text-center text-md-right py-5 rounded-0 bg-khaki shadow" id="intro-jumbotron">
+                    <h1 class="display-4">Welcome, Traveller</h1>
+                    <p class="lead">My name is Jessica Sills. I'm a software engineer and full-stack web developer in
+                        Seattle, Washington, who has a passion for solving problems and satisfying clients.
+                    </p>
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="mt-2 mt-md-4 img-fluid"
+                        id="intro-divider">
+                    <a class="btn btn-dark btn-lg mt-4" id="lets-talk-button" href="#" role="button">Let's Speak</a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="headshot-row">
+            <div class="col col-md-4 text-center">
+                <img src="assets/images/JessicaCropped.jpg" alt="..." class="rounded-circle img-fluid shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- About section. -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-md-11">
+                <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-burlywood shadow"
+                    id="about-jumbotron">
+                    <h1 class="display-4">About</h1>
+                    <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                        intuitive designs that put the user first. I graduated from University of Washington in 2017
+                        with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                        earning a certificate in Full Stack Web Development from the University of Washington.
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <p>The following are some of the technologies I've used recently:
+                            </p>
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>And these are some additional languages I am familiar with:
+                            </p>
+                            <ul>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>When I'm not developing, I'm outside, either hiking or Live Action Roleplaying (LARPing). In
+                        regards to the latter, I don't just like to build things with my mind, I like to build them
+                        with my hands as well. I flex my creative and problem solving methods by fashioning props,
+                        clothing, and experiences for others to enjoy.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <!-- Projects section. -->
+    <div class="container-fluid project-background pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4 my-5">Completed Quests</h1>
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-center">
+                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">What's Cookin'...?</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">A recipe search and editor</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/images/profilephoto.jpg" alt="Cute Dog"
-                            class="img-fluid float-left mr-3 mb-2 mt-2">
-                        <p>
-                            Hey there, welcome to my basic portfolio!
-                        </p>
-                        <p>
-                            Here are some interesting facts about me: I own a chinchilla named Kia, I LARP (live
-                            action
-                            roleplay) in my spare time, I enjoy video games, I competed in dairy cow competitions in
-                            high school, and my favorite color is purple.
-                        </p>
-                        <p>
-                            Still want to know more? I love Bob Ross, I often fall asleep to his youtube videos at
-                            night, because his voice is calming. Also, the paintings he creates are beautiful, even
-                            though I'm asleep by the time he finishes them at the end of the episodes.
-                        </p>
-                        <p>
-                            One of my proudest accomplishments is completing the Wonderland Trail in 2017. The
-                            Wonderland Trail circumnavigates Mt. Rainier. It's approximately 93 miles and includes
-                            22,000 feet of elevation gain and loss. Myself and two friends backpacked the trail in
-                            11
-                            days; it was physically and emotionally grueling, but we saw some of the most amazing
-                            views.
-                            Views that you can only see if you walk to them.
-                        </p>
+                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">RPS Multiplayer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Two-Player Rock Paper Scissors</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster GIFs</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Custom GIF Search</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3 justify-content-center">
+                <div class="col-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Skyrim Trivia</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Elder Scrolls V Themed Trivia Questions</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lord of the Rings RPG</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Will you destroy the ring? Or keep it?</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-2 d-flex justify-content-center">
+                    <div class="card bg-antique shadow" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hangman National Park</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Nature Park Themed Word Guess</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Sticky footer.-->
-    <footer class="footer bg-dark">
-        <div class="container">
-            <span class="text-muted">Copyright&copy;</span>
-        </div>
-    </footer>
-
-    <!--Required JavaScript for Bootstrap functionality.-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
