@@ -6,6 +6,10 @@ p, ul {
     font-family: 'Asul', sans-serif;
 }
 
+a:hover {
+    color: black;
+}
+
 .jumbo-background {
     /* The image used */
     background-image: url("../images/Dusk-2.jpg");
@@ -66,12 +70,20 @@ p, ul {
     background-color: rgba(219,223,222);
 }
 
+.bg-burlywoodlight {
+    background-color: rgb(238, 187, 178);
+}
+
 .bg-burlywood {
     background-color: rgba(238,169,157);
 }
 
 .bg-darksalmon {
     background-color: rgb(226,145,107);
+}
+
+#navigation {
+    transition: top 0.3s;
 }
 
 /* Extra small devices (575px and below) */

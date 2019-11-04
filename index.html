@@ -27,7 +27,7 @@
 <body>
 
     <!--Fixed header.-->
-    <header class="fixed-top bg-dark-slate-opaque">
+    <header class="fixed-top bg-dark-slate-opaque" id="navigation">
         <div class="container">
             <div class="row">
                 <div class="col mx-auto p-0">
@@ -83,7 +83,7 @@
     <div class="container mb-4">
         <div class="row">
             <div class="col-12 col-md-11">
-                <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-burlywood shadow"
+                <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-burlywoodlight shadow"
                     id="about-jumbotron">
                     <h1 class="display-4">About</h1>
                     <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
@@ -116,8 +116,8 @@
                     </div>
                     <p>When I'm not developing, I'm outside, either hiking or Live Action Roleplaying (LARPing). In
                         regards to the latter, I don't just like to build things with my mind, I like to build them
-                        with my hands as well. I flex my creative and problem solving methods by fashioning props,
-                        clothing, and experiences for others to enjoy.
+                        with my hands as well. I flex my creative and problem solving muscles by fashioning experiences,
+                        props, and clothing for others to enjoy.
                     </p>
                 </div>
             </div>
@@ -130,85 +130,160 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="display-4 my-5">Completed Quests</h1>
+                    <h1 class="display-4 mt-5 mb-0">Completed Quests</h1>
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid mb-5">
                 </div>
             </div>
-            <div class="row mb-3 justify-content-center">
-                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
+            <!-- Experimental Card Layout -->
+            <div class="row mb-5 justify-content-left">
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
                         <div class="card-body">
-                            <h5 class="card-title">What's Cookin'...?</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">A recipe search and editor</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h3 class="card-title">What's Cookin'...?</h3>
+                            <h5 class="card-subtitle mb-2">A recipe search and editor</h5>
+                            <hr class="my-4">
+                            <p class="card-text">What's Cookin' simplifies the hassle of finding recipes online. Users
+                                can save, group, and edit recipes in a single page web app.</p>
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery ~ Firebase</p>
                             <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
                             <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">RPS Multiplayer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Two-Player Rock Paper Scissors</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-4 col-lg-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Monster GIFs</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Custom GIF Search</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-lg-5"></div>
             </div>
-            <div class="row mb-3 justify-content-center">
-                <div class="col-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Skyrim Trivia</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Elder Scrolls V Themed Trivia Questions</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Lord of the Rings RPG</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Will you destroy the ring? Or keep it?</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
-                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 px-2 d-flex justify-content-center">
-                    <div class="card bg-antique shadow" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Hangman National Park</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Nature Park Themed Word Guess</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+            <div class="row mb-5 justify-content-right">
+                <div class="col-lg-5"></div>
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
+                        <div class="card-body text-lg-right">
+                            <h3 class="card-title">RPS Multiplayer</h3>
+                            <h5 class="card-subtitle mb-2">Two-Player Rock Paper Scissors</h5>
+                            <p class="card-text">Compete with a friend on the other side of the world in classic
+                                rock-paper-scissors. Only two people can play at any time; others can watch the choices
+                                that the players make.</p>
+                            <hr class="my-4">
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery ~ Firebase</p>
                             <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
                             <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-5 justify-content-left">
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
+                        <div class="card-body">
+                            <h3 class="card-title">Monster GIFs</h3>
+                            <h5 class="card-subtitle mb-2">Custom GIF Search</h5>
+                            <p class="card-text">A Halloween themed GIF search, though the search options are only
+                                limited by your spooky imagination.</p>
+                            <hr class="my-4">
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
+            <div class="row mb-5 justify-content-right">
+                <div class="col-lg-5"></div>
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
+                        <div class="card-body text-lg-right">
+                            <h3 class="card-title">Skyrim Trivia</h3>
+                            <h5 class="card-subtitle mb-2">Elder Scrolls V Themed Trivia Questions</h5>
+                            <p class="card-text">A timed trivia game with random questions related to the famous Elder
+                                Scrolls video game in a single page web app.</p>
+                            <hr class="my-4">
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 justify-content-left">
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
+                        <div class="card-body">
+                            <h3 class="card-title">Lord of the Rings RPG</h3>
+                            <h5 class="card-subtitle mb-2">Will you destroy the ring? Or keep it?</h5>
+                            <p class="card-text">Choose a side and strategically defeat your enemies in this simple RPG
+                                game themed after J.R. Tolkien's classic story.</p>
+                            <hr class="my-4">
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+            </div>
+            <div class="row mb-5 justify-content-right">
+                <div class="col-lg-5"></div>
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow">
+                        <div class="card-body text-lg-right">
+                            <h3 class="card-title">Hangman National Park</h3>
+                            <h5 class="card-subtitle mb-2">Nature Park Themed Word Guess</h5>
+                            <p class="card-text">Play classic Hangman with a beautiful backdrop and random words
+                                inspired by our fantastic National Parks.</p>
+                            <hr class="my-4">
+                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript</p>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
+                            <a href="#" class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section. -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-md-11">
+                <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-burlywoodlight shadow"
+                    id="about-jumbotron">
+                    <h1 class="display-4">About</h1>
+                    <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                        intuitive designs that put the user first. I graduated from University of Washington in 2017
+                        with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                        earning a certificate in Full Stack Web Development from the University of Washington.
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <p>The following are some of the technologies I've used recently:
+                            </p>
+                            <ul>
+                                <li>HTML & CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript</li>
+                                <li>jQuery</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>And these are some additional languages I am familiar with:
+                            </p>
+                            <ul>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>When I'm not developing, I'm outside, either hiking or Live Action Roleplaying (LARPing). In
+                        regards to the latter, I don't just like to build things with my mind, I like to build them
+                        with my hands as well. I flex my creative and problem solving muscles by fashioning experiences,
+                        props, and clothing for others to enjoy.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 
@@ -223,6 +298,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/javascript.js"></script>
 </body>
 
 </html>
