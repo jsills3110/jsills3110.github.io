@@ -20,11 +20,10 @@
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style2.css">
 
-
     <title>Jessica Sills</title>
 </head>
 
-<body>
+<body onload="animateHTML().init();">
 
     <!--Fixed header.-->
     <header class="fixed-top bg-dark-slate-opaque" id="navigation">
@@ -41,10 +40,10 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="index.html">About <span
+                                <a href="#welcome" class="nav-item nav-link active">About <span
                                         class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="portfolio.html">Completed Quests</a>
-                                <a class="nav-item nav-link" href="contact.html">Special Training</a>
+                                <a href="#projects" class="nav-item nav-link">Completed Quests</a>
+                                <a href="#experience" class="nav-item nav-link">Special Training</a>
                             </div>
                         </div>
                     </nav>
@@ -57,7 +56,7 @@
     <div class="jumbotron jumbotron-fluid jumbo-background m-0 p-0"></div>
 
     <!-- Introduction section. -->
-    <div class="container">
+    <div class="container" id="welcome">
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-12 col-md-11 mt-n5">
@@ -80,7 +79,7 @@
     </div>
 
     <!-- About section. -->
-    <div class="container mb-4">
+    <div class="container mb-4" id="about">
         <div class="row">
             <div class="col-12 col-md-11">
                 <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-burlywoodlight shadow"
@@ -126,7 +125,7 @@
     </div>
 
     <!-- Projects section. -->
-    <div class="container-fluid project-background pb-5">
+    <div class="container-fluid project-background pb-5" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -134,31 +133,10 @@
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid mb-5">
                 </div>
             </div>
-            <!-- Experimental Card Layout -->
             <div class="row mb-5 justify-content-left">
-                <!-- <div class="col col-lg-7"> -->
-                <!-- <div class="card bg-antique shadow"> -->
-                <div class="row no-gutters">
-                    <div class="col-md-8">
-                        <div class="card-body bg-antique shadow">
-                            <h3 class="card-title">What's Cookin'...?</h3>
-                            <h5 class="card-subtitle mb-2">A recipe search and editor</h5>
-                            <hr class="my-4">
-                            <p class="card-text">What's Cookin' simplifies the hassle of finding recipes online.
-                                Users
-                                can save, group, and edit recipes in a single page web app.</p>
-                            <p class="card-text">HTML ~ CSS ~ Bootstrap ~ JavaScript ~ jQuery ~ Firebase</p>
-                            <a href="https://github.com/jsills3110/Project-1" target="_blank"
-                                class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
-                            <a href="http://www.jessicasills.com/Project-1/" target="_blank"
-                                class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/whatscookin.PNG" alt="divider" class="card-img img-fluid">
-                    </div>
-                </div>
-                <!-- <div class="card-body">
+                <div class="col col-lg-7">
+                    <div class="card bg-antique shadow animated hidden">
+                        <div class="card-body text-lg-left">
                             <h3 class="card-title">What's Cookin'...?</h3>
                             <h5 class="card-subtitle mb-2">A recipe search and editor</h5>
                             <hr class="my-4">
@@ -169,17 +147,15 @@
                                 class="card-link font-darkgray icon-size"><i class="fab fa-github"></i></a>
                             <a href="http://www.jessicasills.com/Project-1/" target="_blank"
                                 class="card-link font-darkgray icon-size"><i class="fas fa-link"></i></a>
-                        </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
             </div>
-            <!-- </div> -->
-            <!-- <div class="col-lg-5">
-                <img src="assets/images/whatscookin.PNG" alt="divider" class="img-fluid">
-            </div> -->
-            <!-- </div> -->
             <div class="row mb-5 justify-content-right">
                 <div class="col-lg-5"></div>
                 <div class="col col-lg-7">
-                    <div class="card bg-antique shadow">
+                    <div class="card bg-antique shadow animated hidden">
                         <div class="card-body text-lg-right">
                             <h3 class="card-title">RPS Multiplayer</h3>
                             <h5 class="card-subtitle mb-2">Two-Player Rock Paper Scissors</h5>
@@ -198,7 +174,7 @@
             </div>
             <div class="row mb-5 justify-content-left">
                 <div class="col col-lg-7">
-                    <div class="card bg-antique shadow">
+                    <div class="card bg-antique shadow animated hidden">
                         <div class="card-body">
                             <h3 class="card-title">Monster GIFs</h3>
                             <h5 class="card-subtitle mb-2">Custom GIF Search</h5>
@@ -218,7 +194,7 @@
             <div class="row mb-5 justify-content-right">
                 <div class="col-lg-5"></div>
                 <div class="col col-lg-7">
-                    <div class="card bg-antique shadow">
+                    <div class="card bg-antique shadow animated hidden">
                         <div class="card-body text-lg-right">
                             <h3 class="card-title">Skyrim Trivia</h3>
                             <h5 class="card-subtitle mb-2">Elder Scrolls V Themed Trivia Questions</h5>
@@ -236,7 +212,7 @@
             </div>
             <div class="row mb-5 justify-content-left">
                 <div class="col col-lg-7">
-                    <div class="card bg-antique shadow">
+                    <div class="card bg-antique shadow animated hidden">
                         <div class="card-body">
                             <h3 class="card-title">Lord of the Rings RPG</h3>
                             <h5 class="card-subtitle mb-2">Will you destroy the ring? Or keep it?</h5>
@@ -256,7 +232,7 @@
             <div class="row mb-5 justify-content-right">
                 <div class="col-lg-5"></div>
                 <div class="col col-lg-7">
-                    <div class="card bg-antique shadow">
+                    <div class="card bg-antique shadow animated hidden">
                         <div class="card-body text-lg-right">
                             <h3 class="card-title">Hangman National Park</h3>
                             <h5 class="card-subtitle mb-2">Nature Park Themed Word Guess</h5>
@@ -276,28 +252,104 @@
     </div>
 
     <!-- Experience Section. -->
-    <div class="container mb-4">
+    <div class="container mb-4" id="experience">
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-12 col-md-11">
-                <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow"
-                    id="about-jumbotron">
-                    <h1 class="display-4">About</h1>
-                    <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
-                        intuitive designs that put the user first. I graduated from University of Washington in 2017
-                        with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
-                        earning a certificate in Full Stack Web Development from the University of Washington.
-                    </p>
+            <div class="col-12 col-md-4 mr-3 text-center">
+                <div class="sticky" id="exp-title">
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
+                    <h1 class="display-4 display-md-5 display-lg-4 mb-0">Experience</h1>
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
                 </div>
             </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow"
+                            id="about-jumbotron">
+                            <h3>Associate Systems Engineer ~ T-Mobile USA</h3>
+                            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                                intuitive designs that put the user first. I graduated from University of Washington in
+                                2017
+                                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                                earning a certificate in Full Stack Web Development from the University of Washington.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow"
+                            id="about-jumbotron">
+                            <h3>Associate Systems Engineer ~ T-Mobile USA</h3>
+                            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                                intuitive designs that put the user first. I graduated from University of Washington in
+                                2017
+                                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                                earning a certificate in Full Stack Web Development from the University of Washington.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow"
+                            id="about-jumbotron">
+                            <h3>Associate Systems Engineer ~ T-Mobile USA</h3>
+                            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                                intuitive designs that put the user first. I graduated from University of Washington in
+                                2017
+                                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                                earning a certificate in Full Stack Web Development from the University of Washington.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow"
+                            id="about-jumbotron">
+                            <h3>Associate Systems Engineer ~ T-Mobile USA</h3>
+                            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                                intuitive designs that put the user first. I graduated from University of Washington in
+                                2017
+                                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                                earning a certificate in Full Stack Web Development from the University of Washington.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow" id="about-jumbotron">
+            <h1 class="display-4">Experience</h1>
+            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                intuitive designs that put the user first. I graduated from University of Washington in 2017
+                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                earning a certificate in Full Stack Web Development from the University of Washington.
+            </p>
+        </div>
+        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow" id="about-jumbotron">
+            <h1 class="display-4">Experience</h1>
+            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                intuitive designs that put the user first. I graduated from University of Washington in 2017
+                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                earning a certificate in Full Stack Web Development from the University of Washington.
+            </p>
+        </div>
+        <div class="jumbotron text-center text-md-left py-5 mt-4 rounded-0 bg-darksalmon shadow" id="about-jumbotron">
+            <h1 class="display-4">Experience</h1>
+            <p>I'm Jessica, a software engineer based in Seattle, Washington. I value simple and
+                intuitive designs that put the user first. I graduated from University of Washington in 2017
+                with a degree in Computer Engineering and began working at T-Mobile USA. I'm currently
+                earning a certificate in Full Stack Web Development from the University of Washington.
+            </p>
         </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

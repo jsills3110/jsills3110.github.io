@@ -1,9 +1,14 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
 body {
     font-family: 'IM Fell English SC', serif;
 }
 
 p, ul {
     font-family: 'Asul', sans-serif;
+    font-size: 1.2rem;
 }
 
 a:hover {
@@ -106,6 +111,10 @@ a:hover {
     .navbar-brand {
         font-size: 1.2rem;
     }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -116,7 +125,56 @@ a:hover {
 
     #intro-divider {
         margin-right: 1rem;
-        max-width: 18rem;
+        max-width: 16rem;
+    }
+
+    #exp-title {
+        margin-top: 12rem;
+    }
+
+    div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 18rem;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both
+    }
+
+    .hidden {
+        opacity: 0
+    }
+
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
     }
 }
 
@@ -125,14 +183,6 @@ a:hover {
     
     .navbar-brand {
         font-size: 1.5rem;
-    }
-
-    .nav-item {
-        font-size: 1.2rem;
-    }
-    
-    .nav-item {
-        font-size: 1rem;
     }
 
     #headshot-row {
@@ -151,6 +201,10 @@ a:hover {
     #lets-talk-button {
         margin-right: 15rem;
     }
+
+    #exp-title {
+        margin-top: 8rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -162,5 +216,9 @@ a:hover {
 
     #headshot-row {
         margin-top: -14rem;
+    }
+
+    #exp-title {
+        margin-top: 7rem;
     }
 }
