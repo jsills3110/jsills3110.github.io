@@ -39,6 +39,17 @@ a:hover {
     background-size: cover;
 }
 
+.contact-background {
+    /* The image used */
+    background-image: url("../images/Cloudtops-2.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #intro-divider {
     opacity: 0.75;
 }
@@ -81,6 +92,10 @@ a:hover {
 
 .bg-burlywood {
     background-color: rgba(238,169,157);
+}
+
+.bg-burlywooddark {
+    background-color: rgb(221, 156, 144);
 }
 
 .bg-darksalmon {
@@ -128,9 +143,9 @@ a:hover {
         max-width: 16rem;
     }
 
-    #exp-title {
+    /* #exp-title {
         margin-top: 12rem;
-    }
+    } */
 
     div.sticky {
         position: -webkit-sticky; /* Safari */
@@ -202,9 +217,9 @@ a:hover {
         margin-right: 15rem;
     }
 
-    #exp-title {
+    /* #exp-title {
         margin-top: 8rem;
-    }
+    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -218,7 +233,7 @@ a:hover {
         margin-top: -14rem;
     }
 
-    #exp-title {
+    /* #exp-title {
         margin-top: 7rem;
-    }
+    } */
 }
