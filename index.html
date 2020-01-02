@@ -55,7 +55,7 @@
     </header>
 
     <!-- Parallax background header. -->
-    <div class="jumbotron jumbotron-fluid jumbo-background m-0 p-0"></div>
+    <div class="jumbotron jumbotron-fluid jumbo-background parallax m-0 p-0"></div>
 
     <!-- Introduction section. -->
     <div class="container" id="welcome">
@@ -127,7 +127,7 @@
     </div>
 
     <!-- Projects section. -->
-    <div class="container-fluid project-background pb-5" id="projects">
+    <div class="container-fluid project-background parallax pb-5" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -256,10 +256,10 @@
     <!-- Experience Section. -->
     <div class="container mb-4" id="experience">
         <div class="row">
-            <div class="col-12 col-md-4 mr-3 mt-5 text-center">
+            <div class="col-12 col-md-5 col-lg-4 mr-3 mt-5 text-center">
                 <div class="sticky" id="exp-title">
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
-                    <h1 class="display-4 display-md-5 display-lg-4 mb-0">Experience</h1>
+                    <h1 class="display-4 mb-0">Experience</h1>
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
                 </div>
             </div>
@@ -294,6 +294,14 @@
     <!-- Education Section. -->
     <div class="container mb-4" id="training">
         <div class="row">
+            <!-- Hide this title on medium and wider screens.  -->
+            <div class="col-12 d-md-none mr-3 mt-5 text-center">
+                <div class="sticky" id="exp-title">
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
+                    <h1 class="display-4 mb-0">Special Training</h1>
+                    <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
+                </div>
+            </div>
             <div class="col">
                 <div class="row">
                     <div class="col">
@@ -325,10 +333,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 ml-3 mt-5 text-center">
+            <!-- Hide this title on small or narrower screens.  -->
+            <div class="col-md-4 d-none d-md-block ml-3 mt-5 mb-4 text-center">
                 <div class="sticky" id="exp-title">
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
-                    <h1 class="display-4 display-md-5 display-lg-4 mb-0">Special Training</h1>
+                    <h1 class="display-4 mb-0">Special Training</h1>
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid">
                 </div>
             </div>
@@ -336,12 +345,42 @@
     </div>
 
     <!-- Contact Section. -->
-    <div class="container-fluid contact-background pb-5" id="contact">
-        <div class="container">
+    <div class="container-fluid contact-background parallax pt-5 pb-0 px-0" id="contact">
+        <div class="container mb-5 pb-5">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="display-4 mt-5 mb-0">Completed Quests</h1>
+                    <h1 class="display-4 mt-5 mb-0">Stay in Touch</h1>
                     <img src="assets/images/ornatedivider500x43.png" alt="divider" class="img-fluid mb-5">
+                </div>
+            </div>
+            <div class="row text-light justify-content-center">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <div class="card bg-gray shadow text-center">
+                        <div class="card-body">
+                            <a href="https://www.linkedin.com/in/jessicasills/" target="_blank" class="text-light"><i
+                                    class="fab fa-linkedin" style="font-size: 5rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2">
+                    <div class="card bg-gray shadow text-center">
+                        <div class="card-body">
+                            <a href="https://www.linkedin.com/in/jessicasills/" target="_blank" class="text-light"><i
+                                    class="fab fa-github-square" style="font-size: 5rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col col-md-10 col-lg-8">
+                    <div class="jumbotron text-center text-light rounded-0 bg-gray shadow"
+                        id="about-jumbotron">
+                        <h4>A special thank you to Tilted Pixel Studio for use of their photography</h4>
+                        <hr class="my-4 bg-light">
+                        <p>Please check out their work at <a href="https://www.tiltedpixelstudio.com/" target="_blank" class="font-khaki" id="pixel-link">www.TiltedPixelStudio.com</a></p>
+                    </div>
                 </div>
             </div>
         </div>

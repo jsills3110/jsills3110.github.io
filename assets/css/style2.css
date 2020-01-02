@@ -1,7 +1,3 @@
-/* html {
-    scroll-behavior: smooth;
-} */
-
 body {
     font-family: 'IM Fell English SC', serif;
 }
@@ -15,63 +11,60 @@ a:hover {
     color: black;
 }
 
-.jumbo-background {
-    /* The image used */
-    background-image: url("../images/Dusk-2.jpg");
+#intro-divider {
+    opacity: 0.75;
+}
 
+#navigation {
+    transition: top 0.3s;
+}
+
+#pixel-link:hover {
+    color: rgb(161, 161, 161);
+}
+
+.parallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+.jumbo-background {
+    /* The image used */
+    background-image: url("../images/Dusk-2.jpg");
     height: 75vh;
 }
 
 .project-background {
     /* The image used */
     background-image: url("../images/sunset.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .contact-background {
     /* The image used */
     background-image: url("../images/Cloudtops-2.jpg");
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#intro-divider {
-    opacity: 0.75;
 }
 
 .font-darkgray {
     color: rgba(78,92,102);
 }
 
+.font-khaki {
+    color: rgba(255, 229, 200);
+}
+
 .icon-size {
     font-size: 1.5rem;
 }
 
+.bg-gray {
+    background-color: rgba(51,50,46);
+}
+
 .bg-dark-slate-opaque {
     background-color: rgba(50, 64, 75, 0.40);
-}
-
-.bg-gray {
-    background-color: rgba(157,173,188);
-}
-
-.bg-md-gray {
-    background-color: rgb(163,172,187);
 }
 
 .bg-antique {
@@ -80,10 +73,6 @@ a:hover {
 
 .bg-khaki {
     background-color: rgb(255, 229, 200);
-}
-
-.bg-gainsboro {
-    background-color: rgba(219,223,222);
 }
 
 .bg-burlywoodlight {
@@ -96,14 +85,6 @@ a:hover {
 
 .bg-burlywooddark {
     background-color: rgb(221, 156, 144);
-}
-
-.bg-darksalmon {
-    background-color: rgb(226,145,107);
-}
-
-#navigation {
-    transition: top 0.3s;
 }
 
 /* Extra small devices (575px and below) */
@@ -216,10 +197,6 @@ a:hover {
     #lets-talk-button {
         margin-right: 15rem;
     }
-
-    /* #exp-title {
-        margin-top: 8rem;
-    } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -232,8 +209,4 @@ a:hover {
     #headshot-row {
         margin-top: -14rem;
     }
-
-    /* #exp-title {
-        margin-top: 7rem;
-    } */
 }
