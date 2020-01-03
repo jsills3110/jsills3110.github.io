@@ -96,6 +96,14 @@ a:hover {
     .nav-item {
         font-size: 1rem;
     }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -111,6 +119,14 @@ a:hover {
     .nav-item {
         font-size: 1.2rem;
     }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -123,10 +139,6 @@ a:hover {
         margin-right: 1rem;
         max-width: 16rem;
     }
-
-    /* #exp-title {
-        margin-top: 12rem;
-    } */
 
     div.sticky {
         position: -webkit-sticky; /* Safari */
@@ -172,6 +184,14 @@ a:hover {
         animation-name: fadeInUp;
         -webkit-animation-name: fadeInUp;
     }
+
+    .contact-icon {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -196,6 +216,14 @@ a:hover {
 
     #lets-talk-button {
         margin-right: 15rem;
+    }
+
+    .contact-icon {
+        font-size: 5rem;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
     }
 }
 
