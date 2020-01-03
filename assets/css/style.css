@@ -1,35 +1,253 @@
-/*Set the position of the body so that the sticky footer works. Set the background.*/
 body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100vh;
-    background-image: url("../images/full-bloom.png");
-    background-color: #4aaaa5;
+    font-family: 'IM Fell English SC', serif;
 }
 
-/*hr is used as a divider between the main content headings and the actual content.*/
-hr {
-    border: 2px solid #dddddd;
+p, ul {
+    font-family: 'Asul', sans-serif;
+    font-size: 1rem;
 }
 
-/*Set the top and bottom margin of the main content so that it doesn't overlap with 
-  the header or touch the footer.*/
-.main-content {
-    margin-top: 6.625rem;
-    margin-bottom: 6.625rem;
+.edu-sub {
+    font-family: 'Asul', sans-serif;
+    font-size: 1.2rem;
 }
 
-/*Set a sticky footer.*/
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 58px;
-    line-height: 50px;
-    text-align: center;
-    background-color: #f5f5f5;
-    border-top: 8px solid #4aaaa5;
+a:hover {
+    color: black;
 }
+
+#intro-divider {
+    opacity: 0.75;
+}
+
+#navigation {
+    transition: top 0.3s;
+}
+
+#pixel-link:hover {
+    color: rgb(161, 161, 161);
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbo-background {
+    /* The image used */
+    background-image: url("../images/Dusk-2.jpg");
+    height: 75vh;
+}
+
+.project-background {
+    /* The image used */
+    background-image: url("../images/sunset.jpg");
+}
+
+.contact-background {
+    /* The image used */
+    background-image: url("../images/Cloudtops-2.jpg");
+}
+
+.font-darkgray {
+    color: rgba(78,92,102);
+}
+
+.font-khaki {
+    color: rgba(255, 229, 200);
+}
+
+.icon-size {
+    font-size: 1.5rem;
+}
+
+.bg-gray {
+    background-color: rgba(51,50,46);
+}
+
+.bg-dark-slate-opaque {
+    background-color: rgba(50, 64, 75, 0.40);
+}
+
+.bg-antique {
+    background-color: rgb(255, 239, 228);
+}
+
+.bg-khaki {
+    background-color: rgb(255, 229, 200);
+}
+
+.bg-burlywoodlight {
+    background-color: rgb(238, 187, 178);
+}
+
+.bg-burlywood {
+    background-color: rgba(238,169,157);
+}
+
+.bg-burlywooddark {
+    background-color: rgb(221, 156, 144);
+}
+
+/* Extra small devices (575px and below) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
     
+    .nav-item {
+        font-size: 1rem;
+    }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #headshot-row {
+        margin: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+
+    .contact-icon {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    p, ul {
+        font-size: 1.2rem;
+    }
+    
+    #headshot-row {
+        margin-top: -10rem;
+    }
+
+    #intro-divider {
+        margin-right: 1rem;
+        max-width: 16rem;
+    }
+
+    div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 18rem;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both
+    }
+
+    .hidden {
+        opacity: 0
+    }
+
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }
+
+    .contact-icon {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .edu-sub {
+        font-size: 1.4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    #headshot-row {
+        margin-top: -16rem;
+    }
+
+    #intro-jumbotron {
+        padding-left: 6rem;
+    }
+
+    #intro-divider {
+        margin-right: 4rem;
+        max-width: 100%;
+    }
+
+    #lets-talk-button {
+        margin-right: 15rem;
+    }
+
+    .contact-icon {
+        font-size: 5rem;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    #lets-talk-button {
+        margin-right: 0;
+    }
+
+    #headshot-row {
+        margin-top: -14rem;
+    }
+}
