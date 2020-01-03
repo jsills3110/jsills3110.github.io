@@ -4,6 +4,11 @@ body {
 
 p, ul {
     font-family: 'Asul', sans-serif;
+    font-size: 1rem;
+}
+
+.edu-sub {
+    font-family: 'Asul', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -131,6 +136,10 @@ a:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    p, ul {
+        font-size: 1.2rem;
+    }
+    
     #headshot-row {
         margin-top: -10rem;
     }
@@ -191,6 +200,10 @@ a:hover {
 
     .section-title {
         font-size: 3rem;
+    }
+
+    .edu-sub {
+        font-size: 1.4rem;
     }
 }
 
