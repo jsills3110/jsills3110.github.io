@@ -61,4 +61,9 @@ window.addEventListener('popstate', function (e) {
 
 $('html, body').on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
   $('html, body').stop();
+  $('.navbar-collapse').collapse('hide');
+});
+
+$('.navbar-nav>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
 });

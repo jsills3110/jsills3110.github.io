@@ -28,6 +28,14 @@ a:hover {
     color: rgb(161, 161, 161);
 }
 
+/* .nav-custom {
+    color: rgb(224, 224, 224);
+}
+
+.nav-custom:hover {
+    color: rgb(255, 255, 255);
+} */
+
 .parallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -69,7 +77,7 @@ a:hover {
 }
 
 .bg-dark-slate-opaque {
-    background-color: rgba(50, 64, 75, 0.40);
+    background-color: rgba(60, 68, 75, 0.753);
 }
 
 .bg-antique {
